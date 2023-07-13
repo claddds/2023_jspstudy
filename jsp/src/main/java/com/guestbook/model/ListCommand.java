@@ -18,7 +18,7 @@ public class ListCommand implements Command{
 		
 		// 저장
 		request.setAttribute("list", list);
-		// 결과 보여줄 페ㅣ지
+		// 결과 보여줄 페이지
 		return "guestbook/list.jsp";
 	}
 }
