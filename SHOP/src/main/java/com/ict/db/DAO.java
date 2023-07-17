@@ -27,8 +27,13 @@ public class DAO {
 	
 	// 리스트
 	public static List<ShopVO> getList(String category){
-		List<ShopVO> list = getSession().selectList("shop.list", category);
-		return list;
+		try {
+			List<ShopVO> list = getSession().selectList("shop.list", category);
+			return list;
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return null;
 	}
 	
 	// 상세 보기
@@ -45,6 +50,25 @@ public class DAO {
 		
 		CartVO cvo = getSession().selectOne("shop.cartList", map);
 		return cvo;
+	}
+	
+	//카트에 제품 삽입
+	public static int getCartInsert(CartVO c_vo) {
+		int result = getSession().insert("shop.cartInsert", c_vo);
+		ss.commit();
+		return result;
+	}
+	// 카트 제품 업데이트(1증가)
+	public static int getCartUpdate(CartVO cvo) {
+		int result = getSession().update("shop.cartUpdate", cvo);
+		ss.commit();
+		return result;
+	}
+	
+	// 카드 리스트
+	public static List<CartVO> getAllCartList(String m_id){
+		List<CartVO> cartlist = getSession().selectList("shop.cartAllList",m_id);
+		return cartlist;
 	}
 }
 
