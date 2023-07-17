@@ -120,11 +120,31 @@ table tfoot ol.paging li a:hover {
 					<td colspan="4">
 						<ol class="paging">
 							<!-- 이전 -->
-						    
+						    <c:choose>
+						    	<%-- 시작블로과 pagePerBlock를 비교해서 
+						    	시작블록 작으면 이전으로 가 비활서오하 된다. --%>
+						    	<c:when test="${paging.beginBlock paging.pagePerBlock}">
+						    		<li class="disable">이전으로</li>
+						    	</c:when>
+						    	<c:otherwise>
+						    		<li><a href="/MyController?cmd=list&cPage=${paging.beginBlock-paging.pagePerBlock}">이전으로</a></li>
+						    	</c:otherwise>
+						    </c:choose>
 						    <!-- 블록안에 들어간 페이지번호들 -->
-							
+							<c:forEach>
+								
+							</c:forEach>
 							<!-- 다음 -->
-							
+							<c:choose>
+						    	<%-- 시작블로과 pagePerBlock를 비교해서 
+						    	시작블록 작으면 이전으로 가 비활서오하 된다. --%>
+						    	<c:when test="${paging.beginBlock >= paging.pagePerBlock}">
+						    		<li class="disable">이전으로</li>
+						    	</c:when>
+						    	<c:otherwise>
+						    		<li><a href="/MyController?cmd=list&cPage=${paging.beginBlock-paging.pagePerBlock}">이전으로</a></li>
+						    	</c:otherwise>
+						    </c:choose>
 						</ol>
 					</td>
 					<td>
