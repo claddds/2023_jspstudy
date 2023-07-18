@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.servlet.model.Command"/>
-    <fullyQualifiedTypeName name="com.jsp.model.Ex10_3_Model"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
-    <fullyQualifiedTypeName name="org.apache.catalina.filters.ExpiresFilter.XHttpServletResponse"/>
     <fullyQualifiedTypeName name="com.guestbook.model.ListCommand"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.io.Resources"/>
@@ -35,8 +31,6 @@
     <fullyQualifiedTypeName name="com.ict.model.UpdateCommand"/>
     <fullyQualifiedTypeName name="com.ict.model.DeleteCommand"/>
     <fullyQualifiedTypeName name="com.ict.model.UpdateOKCommand"/>
-    <fullyQualifiedTypeName name="com.oreilly.servlet.MultipartRequest"/>
-    <fullyQualifiedTypeName name="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"/>
     <fullyQualifiedTypeName name="com.ict.db.BVO"/>
     <fullyQualifiedTypeName name="com.ict.model.DeleteOKCommand"/>
     <fullyQualifiedTypeName name="com.ict.db.CVO"/>
@@ -52,12 +46,18 @@
     <fullyQualifiedTypeName name="com.ict.model.ContentCommand"/>
     <fullyQualifiedTypeName name="com.ict.model.LogOutCommand"/>
     <fullyQualifiedTypeName name="com.ict.model.AddCartCommand"/>
-    <fullyQualifiedTypeName name="com.ict.db.ShopVO"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="com.ict.model.Command"/>
     <fullyQualifiedTypeName name="com.ict.model.ShowCartCommand"/>
     <fullyQualifiedTypeName name="com.ict.db.MemberVO"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="com.ict.db.DAO"/>
     <fullyQualifiedTypeName name="com.ict.db.CartVO"/>
+    <fullyQualifiedTypeName name="com.ict.model.EditCountCommand"/>
+    <fullyQualifiedTypeName name="com.ict.model.CartDeleteCommand"/>
+    <fullyQualifiedTypeName name="com.ict.model.Command"/>
+    <fullyQualifiedTypeName name="com.ict.model.AdminCommand"/>
+    <fullyQualifiedTypeName name="com.ict.model.ProductAddCommand"/>
+    <fullyQualifiedTypeName name="com.oreilly.servlet.MultipartRequest"/>
+    <fullyQualifiedTypeName name="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"/>
+    <fullyQualifiedTypeName name="com.ict.db.DAO"/>
+    <fullyQualifiedTypeName name="com.ict.db.ShopVO"/>
 </qualifiedTypeNameHistroy>

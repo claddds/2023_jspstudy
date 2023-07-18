@@ -45,8 +45,8 @@
 	  <div id = "log">
 	  <%-- 로그인 성공여부 체크--%>
 	  	<c:choose>
-	  		<c:when test="${login == 'ok' }">
-	  			${m_vo.m_name }님 환영합니다.
+	  		<c:when test="${login == 'ok'}">
+	  			${m_vo.m_name}님 환영합니다.
 	  			<a href="/MyController?cmd=logout">로그아웃</a>
 	  			<a href="/MyController?cmd=viewcart">장바구니</a>
 	  		</c:when>
